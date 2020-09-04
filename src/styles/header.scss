@@ -35,11 +35,12 @@
     padding: 23px 0;
     transition: 0.3s;
 
-    .is-active {
+    &--active {
+      @extend .nav__link;
       color: $blue-color;
     }
   
-    .is-active::after {
+    &--active::after {
       content: "";
       display: block;
       position: absolute;
