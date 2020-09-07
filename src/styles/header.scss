@@ -35,11 +35,11 @@
     padding: 23px 0;
     transition: color 0.4s;
 
-    &--is-active {
+    &.is-active {
       color: $blue-color;
     }
   
-    &--is-active::after {
+    &.is-active::after {
       content: "";
       display: block;
       position: absolute;
