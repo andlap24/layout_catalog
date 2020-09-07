@@ -33,6 +33,7 @@
     text-decoration: none;
     color: $text-color;
     padding: 23px 0;
+    transition: color 0.4s;
 
     &--is-active {
       color: $blue-color;
