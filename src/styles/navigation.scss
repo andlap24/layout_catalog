@@ -20,6 +20,8 @@
     color: $text-color;
     padding: 23px 0;
 
+    transition: color 0.3s;
+
     &:hover {
       color: $active-color;
     }

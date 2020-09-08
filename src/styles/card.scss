@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   
-  padding: 30px 14px 14px;
-
+  padding: 14px;
   width: 200px;
   height: 403px;
 
@@ -11,9 +10,20 @@
   border-radius: 5px;
 
   &__image {
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
     margin: 0 auto;
+    padding-top: 13px;
+
+    border: 3px solid transparent;
+
+    transition: transform 1s, border-color 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: #f3f3f3;
+    }
   }
 
   &__title {
@@ -21,7 +31,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    margin: 45px 0 5px;
+    margin: 42px 0 5px;
   }
 
   &__code {
@@ -67,8 +77,10 @@
     border: 1px solid $active-color;
     color: #fff;
 
+    transition: color 0.3s, background-color 0.3s;
+
     &:hover {
-      background: #fff;
+      background-color: #fff;
       color: $active-color;
     }
   }
