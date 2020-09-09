@@ -12,22 +12,22 @@
 
   &__catalog {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $card-width);
     gap: 50px 48px;
 
     justify-content: center;
-    margin: 50px auto;
+    margin: 0 auto;
 
     @media (max-width: 979px) {
-      grid-template-columns: repeat(3, 200px);
+      grid-template-columns: repeat(3, $card-width);
     }
 
     @media (max-width: 749px) {
-      grid-template-columns: repeat(2, 200px);
+      grid-template-columns: repeat(2, $card-width);
     }
 
     @media (max-width: 449px) {
-      grid-template-columns: repeat(1);
+      grid-template-columns: repeat($card-width);
     }
   }
 }
