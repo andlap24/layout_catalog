@@ -14,6 +14,7 @@
     display: grid;
     grid-template-columns: repeat(4, 200px);
     gap: 50px 48px;
+
     justify-content: center;
     margin: 50px auto;
 
@@ -26,7 +27,7 @@
     }
 
     @media (max-width: 449px) {
-      grid-template-columns: repeat(1, 200px);
+      grid-template-columns: repeat(1);
     }
   }
 }
