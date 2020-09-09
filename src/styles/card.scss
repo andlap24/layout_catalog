@@ -6,7 +6,7 @@
   width: 200px;
   height: 403px;
 
-  border: 1px solid #f3f3f3;
+  border: 1px solid $border-color;
   border-radius: 5px;
 
   &__image {
@@ -18,11 +18,11 @@
 
     border: 3px solid transparent;
 
-    transition: transform 1s, border-color 1s;
+    transition: transform 1s;
 
     &:hover {
       transform: scale(1.2);
-      border-color: #f3f3f3;
+      border-color: $border-color;
     }
   }
 
